@@ -1,0 +1,38 @@
+<!DOCTYPE html PUBLIC "-//W3c//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3org/TR/xhtml1/TDT/xhtml1-transitional.dtd">
+<html>
+<title>
+Javascript Assignment
+</Title>
+<body>
+<form>
+  Birth Year: <input type="text" />
+  Current Year: <input type="text" />
+<input type="submit" value="Calculate" />
+</form>
+Age calculation
+<script type="text/javascript">
+
+var bYear = document.forms[0]
+var age = (2016 - bYear);
+
+if (age < 18){
+document.write("Your stage: Teenager");
+document.write("You are "+age+" Years old!");
+}
+else if (age > 18 && age < 35){
+document.write(" Your stage: Adult");
+document.write("You are "+age+" Years old!");
+}
+else if(age>35){
+document.write("Your Stage: Mature Adult");
+document.write("You are "+age+" Years old!");
+}
+else{
+  document.write("Please Enter in Number form! YYYY");
+
+}
+</script>
+
+</body>
+</html>
